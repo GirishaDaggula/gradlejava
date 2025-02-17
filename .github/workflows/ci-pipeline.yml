@@ -23,6 +23,9 @@ jobs:
         with:
           clean: false
 
+      - name: Echo Message  
+        run: echo "Hi, I am from COSC 1209 class"
+
       - name: Grant execute permission to Gradle wrapper (Linux/macOS only)
         if: runner.os != 'Windows'
         run: chmod +x ./gradlew
